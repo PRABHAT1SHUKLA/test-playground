@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const TypingEffect = ({ text = "Hlxclo, welcome to the typing effect demo!" }) => {
+const TypingEffect = ({ text = "fuck the system , i dont want to do nothing with my lfe , jsut chill and relax" }) => {
   const [displayedText, setDisplayedText] = useState('');
   
   useEffect(() => {

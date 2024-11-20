@@ -1,21 +1,17 @@
 import { useEffect, useState } from 'react'
 
 import './App.css'
-import TrafficLight from './components/TrafficLight'
-import TypingEffect from './components/TypingEffect'
+import Post from './components/post'
+import Tab from './components/tabs'
 
 function App() {
-
-  
-  return (
-    <>
-    <TypingEffect/>
-
-
- 
-    </>
+   return (
+    
+    <Tab/>  
+        
   )
 }
+
 
 
 
