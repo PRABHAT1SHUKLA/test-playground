@@ -1,9 +1,23 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const Tab = () => {
   const [active , setActive] = useState("todo1")
+  const [data , setData] = useState({})
+  const [loading , setLoading] = useState(false)
 
-  
+  useEffect(()=>{
+    console.log(active)
+    setLoading(true)
+    fetch('https://dummyjson.com/todos/random').then(async res => {
+      const json =  await res.json()
+      //  setData(json)
+      setData(json)
+      setLoading(false)
+    }
+
+    )
+
+  },[active])  
 
   return <>
    <button onClick={()=>{
@@ -21,6 +35,8 @@ const Tab = () => {
    <button onClick={()=>{
     setActive("5")
    }} style={{ color: active =="5" ? "red": "black"}}> todo5</button>
+   <br/>
+   {loading? 'Loading...': data.id }
   </>
 
 }
