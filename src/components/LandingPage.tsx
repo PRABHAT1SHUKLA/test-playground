@@ -1,8 +1,9 @@
 import { useState } from "react"
+import Profile from "./Profile"
 
 const LandingPage =()=>{
   
-  const [show , setShow] = useState("false")
+  const [show , setShow] = useState(false)
 
 
 

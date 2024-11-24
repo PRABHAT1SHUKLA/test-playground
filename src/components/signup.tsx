@@ -10,13 +10,14 @@ import { useNavigate } from "react-router-dom";
 //   }
 // }
 
-const navigate = useNavigate()
+
 
 
 export default function Signup(){
 
   const [formdata , setFormdata] = useState({username:"", password:""})
   const [message , setMessage] = useState('')
+  const navigate = useNavigate()
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target; // Extract 'name' and 'value' from the input

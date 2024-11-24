@@ -11,9 +11,10 @@ import { useNavigate } from "react-router-dom";
 // }
 
 
-const navigate = useNavigate()
+
 
 export default function Signin(){
+  const navigate = useNavigate()
 
   const [formdata , setFormdata] = useState({username:"", password:""})
   const [message , setMessage] = useState('')
