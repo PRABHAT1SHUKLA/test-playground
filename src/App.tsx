@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 
 import './App.css'
-import Post from './components/post'
-import Tab from './components/tabs'
+
+import Signup from './components/signup'
 
 function App() {
    return (
     
-    <Tab/>  
+   <Signup/>  
         
   )
 }
