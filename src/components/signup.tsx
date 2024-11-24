@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // const handleSubmit = (e:React.ChangeEvent<HTMLInputElement>) =>{
 //   e.preventDefault();
@@ -9,7 +10,7 @@ import { useState } from "react";
 //   }
 // }
 
-
+const navigate = useNavigate()
 
 
 export default function Signup(){
@@ -29,6 +30,8 @@ export default function Signup(){
     try {
       const response = await axios.post('http://localhost:3000/signup', formdata); // Update with your backend URL
       setMessage(response.data.message); // Show success message
+
+      navigate('/signin')
     } catch (error: any) {
       setMessage(error.response?.data?.message || 'Something went wrong'); // Show error message
     }
