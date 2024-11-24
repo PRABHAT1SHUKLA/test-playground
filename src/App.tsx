@@ -3,11 +3,16 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 import Signup from './components/signup'
+import Signin from './components/signin'
 
 function App() {
    return (
-    
-   <Signup/>  
+    <div >
+      <Signup/>  
+
+      <Signin/>
+      </div>
+ 
         
   )
 }
