@@ -15,7 +15,13 @@ function App() {
         <Route path="/signin" element={<Signin />} />
         <Route path="/landing" element={<LandingPage/>} />
         <Route path="/counter" element={<Counter/>}/>
-        <Route path="/accordion" element={<Accordion}
+        <Route path="/accordion" element={<div className="p-4 max-w-md mx-auto">
+       <h1 className="text-2xl font-bold mb-4">Simple Accordion</h1>
+      <Accordion title="Accordion Item 1" content="This is the content for item 1." />
+      <Accordion title="Accordion Item 2" content="This is the content for item 2." />
+      <Accordion title="Accordion Item 3" content="This is the content for item 3." />
+    </div>
+}
       </Routes>
     </Router>
   );
