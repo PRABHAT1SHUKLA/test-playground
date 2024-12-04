@@ -5,6 +5,7 @@ import Signin from "./components/signin";
 import LandingPage from "./components/LandingPage";
 import Counter from "./components/counter";
 import Accordion from "./components/accordion";
+import TypingSpeed from "./components/typingspeedcal";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       <Accordion title="Accordion Item 2" content="This is the content for item 2." />
       <Accordion title="Accordion Item 3" content="This is the content for item 3." />
     </div>
-}
+}/>
+    <Route path="/speed" element={<TypingSpeed/>}/>
       </Routes>
     </Router>
   );
