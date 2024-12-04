@@ -4,6 +4,7 @@ import Signup from "./components/signup";
 import Signin from "./components/signin";
 import LandingPage from "./components/LandingPage";
 import Counter from "./components/counter";
+import Accordion from "./components/accordion";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/signin" element={<Signin />} />
         <Route path="/landing" element={<LandingPage/>} />
         <Route path="/counter" element={<Counter/>}/>
+        <Route path="/accordion" element={<Accordion}
       </Routes>
     </Router>
   );
