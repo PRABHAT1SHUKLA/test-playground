@@ -7,6 +7,9 @@ import Counter from "./components/counter";
 import Accordion from "./components/accordion";
 import TypingSpeed from "./components/typingspeedcal";
 
+import Time from "./components/time";
+import My from "./components/my";
+
 function App() {
   return (
     <Router>
@@ -24,6 +27,8 @@ function App() {
     </div>
 }/>
     <Route path="/speed" element={<TypingSpeed/>}/>
+   <Route path="/time" element={<Time/>}/>
+    <Route path="/me" element={<My/>}/>
       </Routes>
     </Router>
   );
