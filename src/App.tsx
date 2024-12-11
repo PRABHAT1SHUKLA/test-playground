@@ -9,6 +9,7 @@ import TypingSpeed from "./components/typingspeedcal";
 
 import Time from "./components/time";
 import My from "./components/my";
+import Carousel from "./components/carousel";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
     <Route path="/speed" element={<TypingSpeed/>}/>
    <Route path="/time" element={<Time/>}/>
     <Route path="/me" element={<My/>}/>
+    <Route path='/carousel' element={<Carousel/>}/>
       </Routes>
     </Router>
   );
