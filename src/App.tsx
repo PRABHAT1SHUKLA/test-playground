@@ -6,6 +6,7 @@ import LandingPage from "./components/LandingPage";
 import Counter from "./components/counter";
 import Accordion from "./components/accordion";
 import TypingSpeed from "./components/typingspeedcal";
+import  { Debounce } from "./components/debounced";
 
 import Time from "./components/time";
 import My from "./components/my";
@@ -31,6 +32,7 @@ function App() {
    <Route path="/time" element={<Time/>}/>
     <Route path="/me" element={<My/>}/>
     <Route path='/carousel' element={<Carousel/>}/>
+    <Route path="/debounce" element={<Debounce/>}/>
       </Routes>
     </Router>
   );
