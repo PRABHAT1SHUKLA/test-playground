@@ -12,6 +12,7 @@ import Time from "./components/time";
 import My from "./components/my";
 import Carousel from "./components/carousel";
 import Accordion2 from "./components/accordion2";
+import DrawingCanvas from "./components/drawcanvas";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
     <Route path='/carousel' element={<Carousel/>}/>
     <Route path="/debounce" element={<Debounce/>}/>
     <Route path="/accordion2" element={<Accordion2/>}></Route>
+    <Route path="/canvas" element={<DrawingCanvas/>}></Route>
       </Routes>
     </Router>
   );
