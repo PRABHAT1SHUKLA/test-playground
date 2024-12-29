@@ -9,7 +9,7 @@ import TypingSpeed from "./components/typingspeedcal";
 import  { Debounce } from "./components/debounced";
 
 import Time from "./components/time";
-import My from "./components/my";
+import {Ps }from "./components/my";
 import Carousel from "./components/carousel";
 import Accordion2 from "./components/accordion2";
 import DrawingCanvas from "./components/drawcanvas";
@@ -34,7 +34,7 @@ function App() {
 }/>
     <Route path="/speed" element={<TypingSpeed/>}/>
    <Route path="/time" element={<Time/>}/>
-    <Route path="/me" element={<My/>}/>
+    <Route path="/me" element={<Ps/>}/>
     <Route path='/carousel' element={<Carousel/>}/>
     <Route path="/debounce" element={<Debounce/>}/>
     <Route path="/accordion2" element={<Accordion2/>}></Route>
