@@ -14,6 +14,7 @@ import Carousel from "./components/carousel";
 import Accordion2 from "./components/accordion2";
 import DrawingCanvas from "./components/drawcanvas";
 import { TodoApp, TodoProvider } from "./components/todocontext";
+import Countre from "./components/simplereducer";
 
 function App() {
   return (
@@ -44,7 +45,7 @@ function App() {
   </TodoProvider>}></Route>
 
 
-
+  <Route path="/countre" element={<Countre/>}/>
 
       </Routes>
     </Router>

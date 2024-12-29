@@ -25,7 +25,7 @@ const PaginationExample = () => {
     if (currentPage > 1) setCurrentPage(currentPage - 1);
   };
 
-  const handlePageClick = (pageNumber) => {
+  const handlePageClick = (pageNumber:number) => {
     setCurrentPage(pageNumber);
   };
 
