@@ -17,12 +17,13 @@ export const Ps = () =>{
   const [ property, dispatch] = useReducer(heroReducer , "nothing")
 
   return(
-    <div style={{ textAlign: "center", fontFamily: "Arial, sans-serif" }}>
+    <div style={{ textAlign: "center", fontFamily: "Arial, sans-serif" ,  backgroundColor: "#121212" }}>
       <h1>Property : {property}</h1>
 
       <button onClick={()=>{dispatch({type:'batman'})}}>batman</button>
       <button onClick={()=>{dispatch({type:'superman'})}}>superman</button>
       <button onClick={()=>{dispatch({type:'spiderman'})}}>spiderman</button>
+
 
     </div>
   )
