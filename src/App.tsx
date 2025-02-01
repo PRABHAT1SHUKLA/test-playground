@@ -15,6 +15,7 @@ import Accordion2 from "./components/accordion2";
 import DrawingCanvas from "./components/drawcanvas";
 import { TodoApp, TodoProvider } from "./components/todocontext";
 import Countre from "./components/simplereducer";
+import Make from "./components/fetch";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
     </div>
 }/>
     <Route path="/speed" element={<TypingSpeed/>}/>
+    <Route path="/fetch" element={<Make/>}/>
    <Route path="/time" element={<Time/>}/>
     <Route path="/me" element={<Ps/>}/>
     <Route path='/carousel' element={<Carousel/>}/>
