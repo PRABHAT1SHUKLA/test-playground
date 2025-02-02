@@ -39,6 +39,7 @@ function App() {
     <Route path="/me" element={<Ps/>}/>
     <Route path='/carousel' element={<Carousel/>}/>
     <Route path="/debounce" element={<Debounce/>}/>
+    <Route path="/tapp" element={<TodoApp/>}/>
     <Route path="/accordion2" element={<Accordion2/>}></Route>
     <Route path="/canvas" element={<DrawingCanvas/>}></Route>
     <Route path="/canvas" element={   
