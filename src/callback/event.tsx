@@ -1,18 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useCallback } from 'react';
 
-const Event= () => {
-  const [count, setCount] = useState(0);
-
-  const handleResize = () => {
-    console.log("Window resized!", count);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [handleResize]); // handleResize is re-created every render
-
-  return <button onClick={() => setCount(count + 1)}>Increment</button>;
+const ChildComponent = ({ onClick } ) => {
+  console.log('ChildComponent rendering...');
+  return <button onClick={onClick}>Click me</button>;
 };
 
-export default Event;
+const CallbackExample = () => {
+  const [count, setCount] = useState(0);
+
+  // Regular callback function
+  const handleClick = () => {
+    console.log('Button clicked!');
+    setCount((prevCount) => prevCount + 1);
+  };
+
+  // Memoized callback using useCallback
+  const memoizedHandleClick = useCallback(handleClick, []);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <ChildComponent onClick={memoizedHandleClick} />
+    </div>
+  );
+};
+
+export default CallbackExample;
