@@ -18,6 +18,7 @@ import Countre from "./components/simplereducer";
 import Make from "./components/fetch";
 import Event from "./callback/event";
 import List from "./callback/list";
+import Timer from "./callback/delayed";
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/signup" />} />
         <Route path="/event" element={<Event/>} />
-        <Route path="/list" element={<List/>} />
+        <Route path="/list" element={<Timer/>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/landing" element={<LandingPage/>} />

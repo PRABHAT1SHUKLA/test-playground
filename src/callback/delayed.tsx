@@ -1,13 +1,13 @@
 import React, { useState, useCallback, useEffect } from "react";
 
-const TimerComponent = () => {
+const Timer = () => {
   const [count, setCount] = useState(0);
 
   const delayedIncrement = useCallback(() => {
     setTimeout(() => {
       setCount((prev) => prev + 1);
     }, 2000);
-  }, []);
+  }, [count]);
 
   useEffect(() => {
     delayedIncrement();
@@ -16,4 +16,4 @@ const TimerComponent = () => {
   return <div>Count: {count}</div>;
 };
 
-export default TimerComponent;
+export default Timer;
