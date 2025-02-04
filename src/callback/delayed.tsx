@@ -11,7 +11,12 @@ const Timer = () => {
 
   useEffect(() => {
     delayedIncrement();
-  }, [delayedIncrement]);
+   
+    setTimeout(()=>{
+       console.log("hello")
+    },1000)
+
+  }, [count]);
 
   return <div>Count: {count}</div>;
 };
