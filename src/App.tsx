@@ -19,6 +19,7 @@ import Make from "./components/fetch";
 import Event from "./callback/event";
 import List from "./callback/list";
 import Timer from "./callback/delayed";
+import MouseTracker from "./callback/mousetracker";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/signup" />} />
         <Route path="/event" element={<Event/>} />
-        <Route path="/list" element={<Timer/>} />
+        <Route path="/list" element={<MouseTracker/>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/landing" element={<LandingPage/>} />
