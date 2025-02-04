@@ -16,12 +16,15 @@ import DrawingCanvas from "./components/drawcanvas";
 import { TodoApp, TodoProvider } from "./components/todocontext";
 import Countre from "./components/simplereducer";
 import Make from "./components/fetch";
+import Event from "./callback/event";
+
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/signup" />} />
+        <Route path="/event" element={<Event/>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/landing" element={<LandingPage/>} />
