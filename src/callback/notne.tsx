@@ -12,6 +12,15 @@ const App = () => {
   const handleClick = useCallback((item: string) => {
     setSelected(item);
   }, []);
+  const [userId, setUserId] = useState(1);
+
+useEffect(() => {
+  console.log(`Fetching user ${userId}`);
+  fetch(`/api/users/${userId}`)
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+}, [userId]);
+
 
   return (
     <div>
